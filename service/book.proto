@@ -1,0 +1,13 @@
+syntax="proto3";
+
+package service;
+
+option go_package = "service";
+
+import "model/book.proto";
+import "model/empty.proto";
+
+service BookService {
+  rpc GetBooks(model.Empty) returns (model.Book) {}
+}
+

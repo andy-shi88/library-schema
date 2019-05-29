@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package model;
+
+option go_package = "github.com/andy-shi88/library/backend/schema/model";
+
+message Book {
+  string title = 1;
+  string author = 2;
+}
+
